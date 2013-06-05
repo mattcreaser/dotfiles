@@ -1,4 +1,5 @@
 export PATH=$PATH:/Users/mcreaser/slashjoin/node/bin:/Users/mcreaser/slashjoin/node_modules/.bin
+export PATH=$PATH:/Users/mcreaser/platform/node_modules/.bin
 export PATH=$PATH:/Users/mcreaser/bin
 
 function _update_ps1() {
