@@ -1,6 +1,9 @@
 # Switch to the base dir for the slashjoin repo.
 alias cds="cd ~/slashjoin"
 
+# Switch to the base dir for the platform repo.
+alias cdp="cd ~/platform"
+
 # Shorcut for pulling from git origin
 alias gpr="git pull --rebase"
 
