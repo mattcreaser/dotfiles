@@ -2,6 +2,7 @@ export PATH=$PATH:/Users/mcreaser/slashjoin/node/bin:/Users/mcreaser/slashjoin/n
 export PATH=$PATH:/Users/mcreaser/platform/node_modules/.bin
 export PATH=$PATH:/Users/mcreaser/bin
 export PATH=/usr/local/bin:$PATH
+export PATH=./node_modules/.bin:$PATH
 
 function _update_ps1() {
    export PS1="$(~/powerline-shell.py $?)"
