@@ -38,6 +38,9 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_disabled_filetypes = ['html']
 let mapleader=","
 
+" Only update the instant markdown preview occasionally instead of realtime.
+let g:instant_markdown_slow = 1
+
 " Don't search through these directories when using crtl-p
 let g:ctrlp_custom_ignore = {                                             
       \ 'dir': '\v[\/](haproxy-1.4.20|node_modules|.git|yui-compressor)$',
@@ -62,3 +65,6 @@ endfunction
 " NB: this supports "rp that replaces the selection by the contents of @r
 vnoremap <silent> <expr> p <sid>Repl()
 " }}}
+
+" *.md files are markdown
+au BufRead,BufNewFile *.md set filetype=markdown
