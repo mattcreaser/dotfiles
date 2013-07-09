@@ -44,7 +44,7 @@ let g:ctrlp_custom_ignore = {
       \ }
 
 " Auto remove trailing whitespace when saving javascript files.
-autocmd BufWritePre *.js :%s/\s\+$//e
+autocmd BufWritePre *.* :%s/\s\+$//e
 
 "{{{
 " Remap p so that I can paste in visual mode without overwriting the register
