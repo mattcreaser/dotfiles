@@ -29,9 +29,6 @@ fi
 
 . ~/.bash_git_cmd
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 # Add homebrew path for python
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
-source ~/.rvm/scripts/rvm
