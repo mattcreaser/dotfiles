@@ -3,6 +3,7 @@ export PATH=$PATH:/Users/mcreaser/platform/node_modules/.bin
 export PATH=$PATH:/Users/mcreaser/bin
 export PATH=/usr/local/bin:$PATH
 export PATH=./node_modules/.bin:$PATH
+export PATH=$PATH:/usr/local/Cellar/rabbitmq/3.0.4/sbin/
 
 function _update_ps1() {
    export PS1="$(~/powerline-shell.py $?)"

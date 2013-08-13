@@ -26,7 +26,7 @@ syntax on
 filetype plugin indent on
 
 " Use my favourite colour scheme
-colorscheme Tomorrow-Night-Bright 
+colorscheme distinguished
 
 " Make crtl-u and crtl-w in insert mode undo-able
 inoremap <c-u> <c-g>u<c-u>
@@ -42,7 +42,7 @@ let mapleader=","
 let g:instant_markdown_slow = 1
 
 " Don't search through these directories when using crtl-p
-let g:ctrlp_custom_ignore = {                                             
+let g:ctrlp_custom_ignore = {
       \ 'dir': '\v[\/](haproxy-1.4.20|node_modules|.git|yui-compressor)$',
       \ }
 
