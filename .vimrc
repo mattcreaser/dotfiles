@@ -68,3 +68,7 @@ vnoremap <silent> <expr> p <sid>Repl()
 
 " *.md files are markdown
 au BufRead,BufNewFile *.md set filetype=markdown
+
+" Put backup and swp files in special directories instead of the working dir.
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
