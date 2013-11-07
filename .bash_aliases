@@ -1,11 +1,14 @@
 # Switch to the base dir for the slashjoin repo.
-alias cds="cd ~/slashjoin"
+alias cds="cd ~/code/slashjoin"
 
 # Switch to the base dir for the platform repo.
-alias cdp="cd ~/platform"
+alias cdp="cd ~/code/platform"
 
 # Switch to the base dir for the website repo.
-alias cdw="cd ~/website"
+alias cdw="cd ~/code/website"
+
+# Switch to the base dir for the components repo.
+alias cdc="cd ~/code/components"
 
 # Shorcut for pulling from git origin
 alias gpr="git pull --rebase"
