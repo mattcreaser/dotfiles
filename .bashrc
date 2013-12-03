@@ -1,7 +1,7 @@
-export PATH=$PATH:/Users/mcreaser/slashjoin/node/bin:/Users/mcreaser/slashjoin/node_modules/.bin
-export PATH=$PATH:/Users/mcreaser/platform/node_modules/.bin
+export PATH=$PATH:/Users/mcreaser/code/platform/node_modules/.bin
 export PATH=$PATH:/Users/mcreaser/bin
 export PATH=/usr/local/bin:$PATH
+export PATH=/user/local/opt/ruby/bin:$PATH
 export PATH=./node_modules/.bin:$PATH
 export PATH=$PATH:/usr/local/Cellar/rabbitmq/3.0.4/sbin/
 
@@ -33,3 +33,9 @@ fi
 # Add homebrew path for python
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+### Allow more open files for those huge npm installs
+ulimit -n 1024
