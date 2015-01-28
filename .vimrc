@@ -41,6 +41,10 @@ let mapleader=","
 " Only update the instant markdown preview occasionally instead of realtime.
 let g:instant_markdown_slow = 1
 
+" Force vim airline to use a specific theme. Avoids a non-zero exit code from
+" vim when using airline.
+let g:airline_theme='dark'
+
 " Don't search through these directories when using crtl-p
 let g:ctrlp_custom_ignore = {
       \ 'dir': '\v[\/](haproxy-1.4.20|node_modules|.git|yui-compressor)$',
@@ -72,3 +76,6 @@ au BufRead,BufNewFile *.md set filetype=markdown
 " Put backup and swp files in special directories instead of the working dir.
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
+
+" Insert a newline without entering insert mode.
+nmap <CR> o<Esc>

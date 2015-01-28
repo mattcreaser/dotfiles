@@ -3,7 +3,7 @@
 gunpushed() {
   local branch remote tracking rbranch
   branch=`git symbolic-ref -q HEAD`
-  if [ -n "$branch" ]; then 
+  if [ -n "$branch" ]; then
     branch="${branch##refs/heads/}"
     remote=`git config branch.${branch}.remote`
     tracking=`git config branch.${branch}.merge`
@@ -21,7 +21,7 @@ gunpushed() {
 gpu() {
   local branch remote tracking
   branch=`git symbolic-ref -q HEAD`
-  if [ -n "$branch" ]; then 
+  if [ -n "$branch" ]; then
     branch="${branch##refs/heads/}"
     remote=`git config branch.${branch}.remote`
     tracking=`git config branch.${branch}.merge`
@@ -33,6 +33,26 @@ gpu() {
       echo "** creating new remote branch $branch **"
       echo "git push -u origin $branch"
       git push -u origin $branch
+    fi
+  fi
+}
+
+gpforce() {
+  local branch remote tracking
+  branch=`git symbolic-ref -q HEAD`
+  local branch remote tracking
+  branch=`git symbolic-ref -q HEAD`
+  if [ -n "$branch" ]; then
+    branch="${branch##refs/heads/}"
+    remote=`git config branch.${branch}.remote`
+    tracking=`git config branch.${branch}.merge`
+    if [ -n "$remote" -a -n "$tracking" ]; then
+      tracking="${tracking##refs/heads/}"
+      echo "git push --force $remote $tracking"
+      git push --force $remote $tracking
+    else
+      echo "Branch does not exist"
+      exit 1
     fi
   fi
 }
